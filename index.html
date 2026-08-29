@@ -23,16 +23,19 @@
     </div>
     </nav>
 
-    <!-- Hero Section -->
-  <section id="home" class="hero">
+<section id="home" class="hero">
+  <div class="hero-container">
+    
     <div class="hero-content">
       <h1>Hi, I'm Sanduni Sathsarani</h1>
+      
       <div class="typing-text">
         <h2>I am a Computer Science undergraduate<span class="cursor">|</span></h2>
       </div>
-      <p class="location"><i class="fa-solid fa-location-dot"></i> Colombo, Sri Lanka</p>
+      
+      <p class="location"><i class="fa-solid fa-location-dot"></i> Galle, Sri Lanka</p>
 
-      <Welcome class="description">
+      <p class="description">
         I'm a passionate Computer Science student with a strong interest in Software 
         Engineering, building interactive websites, and developing scalable applications. I 
         enjoy exploring both front-end and back-end technologies to create meaningful 
@@ -42,47 +45,47 @@
       </p>
 
       <div class="action-buttons">
-        <a href="#" class="btn primary-btn"><i class="fa-solid fa-download"></i> Download CV</a>
         <a href="#projects" class="btn secondary-btn">View Projects</a>
+        <a href="#contact" class="btn secondary-btn">Contact Me</a>
       </div>
 
       <div class="social-links">
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/sanduni-sathsarani" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/sanduni-sathsarani" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
       </div>
     </div>
 
- <div class="hero-image-container">
-    <img src="./Photos/Image-1.png" alt="Profile Photo" class="profile-img">
-</div>
-  </section>
+    <div class="hero-image-container">
+      <img src="./Photos/Image-1.png" alt="Profile Photo" class="profile-img">
+    </div>
 
-  <!-- About Section -->
-  <section id="about" class="section about-section">
-    <div class="about-content">
-      <h2>About Me</h2>
-      <div class="about-image-container">
-        <div class="about-photo">
-          <img src="images/profile.jpg"
-          alt="Sanduni">
-          <div class="photo-decoration"></div>
-
-        </div>
-
-        
-        <div class="about-content">
-
-      <p class="about-text">
-        My name is W.H. Sanduni Sathsarani. I am currently studying Computer Science at General Sir John Kotelawala Defence University.
-        <br> 
-        I’m passionate about Software Engineering and full stack development, 
-         and I enjoy turning ideas into interactive, user friendly applications. 
-         My focus spans both front-end and back-end technologies, allowing me to build scalable, efficient, and maintainable solutions. 
-         I’m constantly learning new tools and techniques, improving my problem solving skills, 
-         and striving to contribute meaningful projects that make an impact.
-      </p>
+  </div>
+<section id="about" class="section">
+  <div class="about-section">
+    
+    <!-- Left Side: Image Container -->
+    <div class="about-image-container">
+      <div class="about-photo">
+        <img src="./Photos/Image-2.png" alt="Portrait of Sanduni Sathsarani">
+        <div class="photo-decoration" aria-hidden="true"></div>
       </div>
-  </section>
+    </div>
+
+    <!-- Right Side: Details & Text -->
+    <div class="about-content">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-text">
+        <p>My name is W.H. Sanduni Sathsarani. I am currently studying Computer Science at General Sir John Kotelawala Defence University.</p>
+        <p>I’m passionate about Software Engineering and full-stack development, and I enjoy turning ideas into interactive, user-friendly applications. My focus spans both front-end and back-end technologies, allowing me to build scalable, efficient, and maintainable solutions. I’m constantly learning new tools and techniques, improving my problem-solving skills, and striving to contribute meaningful projects that make an impact.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <!-- Skills Section -->
 <section id="skills" class="section">
@@ -116,51 +119,68 @@
   </div>
 </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
+<!-- Projects Section -->
+<section id="projects" class="section">
+  <div class="projects-container">
     <h2 class="section-title">Projects</h2>
 
+    <!-- 3-Column Projects Grid -->
     <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-banner bg-pink">
-          <i class="fa-solid fa-clipboard-check card-icon"></i>
+      
+      <!-- Card 1: Smart Street Lighting System -->
+      <article class="project-card">
+        <div class="project-image">
+          <img src="./Photos/street-lighting.jpg" alt="Smart Street Lighting System">
         </div>
-        <div class="project-info">
-          <h3>Daily To Do</h3>
-          <p>Developed Daily To Do, a desktop task management application built with Python and Tkinter, featuring reminders, recurring tasks, drag-and-drop task organization, and customizable themes, packaged as a standalone Windows executable.</p>
-          <div class="tags">
-            <span>Python</span><span>Tkinter</span><span>SQLite</span><span>PyInstaller</span>
+        <div class="project-content">
+          <h3 class="project-title">Smart Street Lighting System</h3>
+          <p class="project-description">
+            A smart street lighting system designed to reduce energy consumption and improve road safety by automatically adjusting streetlight brightness based on environmental conditions and detected movement.
+          </p>
+          <div class="tech-tags">
+            <span class="tag">C++</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">IoT</span>
+            <span class="tag">Sensors</span>
           </div>
-        </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <div class="project-banner bg-dark">
-          <span class="banner-title">CAMPUS API</span>
+      <!-- Card 2: Personal Portfolio Website -->
+      <article class="project-card">
+        <div class="project-image">
+          <img src="./Photos/MyPortfolio.png" alt="Personal Portfolio Website">
         </div>
-        <div class="project-info">
-          <h3>Smart Campus API</h3>
-          <p>Developed Smart Campus API, a RESTful web service for managing smart campus rooms, IoT sensors, and real-time sensor readings using Java and JAX-RS.</p>
-          <div class="tags">
-            <span>Java</span><span>JAX-RS</span><span>Maven</span><span>Apache Tomcat 9</span><span>NetBeans</span><span>Postman</span>
+        <div class="project-content">
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <p class="project-description">
+            A responsive, modern personal portfolio website built from scratch to showcase computer science projects, technical skills, and software engineering accomplishments.
+          </p>
+          <div class="tech-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
           </div>
-        </div>
-      </div>
+      
+      </article>
 
-      <div class="project-card">
-        <div class="project-banner bg-warm">
-          <span class="banner-title">CookMate</span>
+      <!-- Card 3: Brew Haven Café -->
+      <article class="project-card">
+        <div class="project-image">
+          <img src="./Photos/Brew Haven Café.png" alt="Brew Haven Café">
         </div>
-        <div class="project-info">
-          <h3>CookMate Marketing Website</h3>
-          <p>Contributed to the development of the CookMate Marketing Website, a responsive platform designed to showcase the CookMate application, its features, and brand identity.</p>
-          <div class="tags">
-            <span>React</span><span>TypeScript</span><span>HTML</span><span>CSS</span><span>Vercel</span>
+        <div class="project-content">
+          <h3 class="project-title">Brew Haven Café</h3>
+          <p class="project-description">
+            An interactive web application for a café, featuring digital menu browsing, online ordering functionality, and a custom user interface for customers.
+          </p>
+          <div class="tech-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
           </div>
-        </div>
-      </div>
+      </article>
+
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- Journey Section -->
 <section id="journey" class="section">
@@ -177,7 +197,7 @@
         <span class="sub-title text-blue">BSc (Hons) Computer Science</span>
         <p>Currently pursuing a Computer Science degree at General Sir John Kotelawala Defence University, with a strong focus on programming, web development, software engineering, and database management.</p>
         <span class="date">Jan 2026 - Present</span>
-        <h4 class="activities-title">Activities & Societies:</h4>
+        <h4 class="activities-text">Activities & Societies:</h4>
         <ul class="activities-list">
           <li><span class="sub-text">Member of the Institute of Electrical and Electronics Engineers (IEEE)</span></li>
         </ul>
